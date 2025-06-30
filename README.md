@@ -155,8 +155,8 @@ Skynetic/
 
 Thank you **Ecocee** for this internship opportunity and technical guidance throughout the embedded training.
 
-**Mentor:** Team Ecocee  
-**Team Number:** 07  
+**Mentor:** Sreeraj V Rajesh  
+**Team Number:** 03  
 **Team Size:** 2 Members
 
 ### 👨‍💼 Team Contributions
