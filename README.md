@@ -1,79 +1,71 @@
-# 🚀 [Project Title]
+# 🚀 Skynetic – Where Machines Feel
 
 <div align="center">
 <div style="background-color: #000; padding: 20px; border-radius: 12px; display: inline-block;">
   <img src="./logo.jpg" alt="Ecocee Logo" width="120" height="120" />
 </div>
 
-  
-  ### Internship Project at [Ecocee](https://ecocee.in)
-  
-  [![Website](https://img.shields.io/badge/Website-ecocee.in-blue?style=for-the-badge&logo=globe)](https://ecocee.in)
-  [![Email](https://img.shields.io/badge/Contact-info%40ecocee.in-red?style=for-the-badge&logo=gmail)](mailto:info@ecocee.in)
-  
+### Internship Project at [Ecocee](https://ecocee.in)
+
+[![Website](https://img.shields.io/badge/Website-ecocee.in-blue?style=for-the-badge&logo=globe)](https://ecocee.in)
+[![Email](https://img.shields.io/badge/Contact-info%40ecocee.in-red?style=for-the-badge&logo=gmail)](mailto:info@ecocee.in)
 </div>
 
 ---
 
 ## 📋 Project Overview
 
-**Batch:** [Your Batch - e.g., Summer 2024, Winter 2025]  
-**Team Number:** [Team #XX]  
-**Internship Position:** [AI/ML Intern | Embedded Developer Intern | Other]  
-**Duration:** [Start Date - End Date]
+**Batch:** Summer 2025  
+**Team Number:** Team #03  
+**Internship Position:** Embedded Developer Intern  
+**Duration:** 12 June – 30 June 2025 (15 Days)
 
 ### 👥 Team Members
 | Name | Role | Email | LinkedIn |
 |------|------|-------|----------|
-| [Member 1 Name] | [Team Lead/Developer] | [email@example.com] | [LinkedIn Profile] |
-| [Member 2 Name] | [Developer/Researcher] | [email@example.com] | [LinkedIn Profile] |
-| [Member 3 Name] | [Developer/Analyst] | [email@example.com] | [LinkedIn Profile] |
-| [Member 4 Name] | [Developer/Tester] | [email@example.com] | [LinkedIn Profile] |
+| Shreyas K P | Developer | shreyas5710kp@gmail.com | [LinkedIn](https://www.linkedin.com/in/shreyas-k-p-5016a432b) |
+| Amrithraj M M | Developer | amruthrajmurali1441@gmail.com | [LinkedIn](https://www.linkedin.com/in/amrithraj-m-m-512780338) |
 
-> **Note:** Add or remove rows as needed based on your team size
+---
 
-### 🎯 Description
-[Provide a clear and concise description of your project. Explain what problem it solves, what technologies are used, and what makes it unique. This should be 2-3 sentences that give readers a quick understanding of your work.]
+## 🎯 Description
+
+**Skynetic** is a robotic sensing project where ESP32-S2-WROVER is used to identify physical interactions with a robot — distinguishing between soft touches and harsh slaps. Flex sensors and MS5837 pressure sensors detect and measure the force, while LEDs provide immediate feedback. This project bridges human emotion with machine perception.
 
 ---
 
 ## 🔧 Technical Specifications
 
-### **For AI/ML Intern Projects:**
-- **Programming Languages:** Python, R, Julia, etc.
-- **ML Frameworks:** TensorFlow, PyTorch, Scikit-learn, etc.
-- **Data Processing:** Pandas, NumPy, OpenCV, etc.
-- **Model Type:** [Classification/Regression/NLP/Computer Vision/etc.]
-- **Dataset:** [Brief description of data used]
-
-### **For Embedded Developer Intern Projects:**
-- **Microcontroller/Platform:** Arduino, Raspberry Pi, ESP32, STM32, etc.
-- **Programming Languages:** C/C++, Python, Assembly, etc.
-- **Communication Protocols:** I2C, SPI, UART, WiFi, Bluetooth, etc.
-- **Sensors/Components:** [List of hardware components used]
-- **Development Environment:** Arduino IDE, PlatformIO, Keil, etc.
+### Embedded Developer Project:
+- **Microcontroller:** ESP32-S2-WROVER
+- **Programming Language:** C++ (Arduino)
+- **Communication:** I2C (for pressure sensor), analog (flex sensor), digital output (LEDs)
+- **Sensors/Components:** MS5837 Pressure Sensor, Flex Sensors, 74HC4051 Multiplexer, LEDs, Resistors
+- **IDE:** Arduino IDE
 
 ---
 
 ## ⚙️ Project Working
 
 ### Architecture Overview
-[Provide a high-level overview of how your project works. You can include diagrams, flowcharts, or system architecture images here.]
+- Human interaction → Sensor detection → Signal processing → Decision → LED indication
 
 ### Key Components
-1. **Component 1:** [Brief description]
-2. **Component 2:** [Brief description]
-3. **Component 3:** [Brief description]
+1. **Flex Sensor:** Detects bending
+2. **MS5837 Pressure Sensor:** Measures pressure in mbar
+3. **ESP32:** Microcontroller that processes input and controls LEDs
 
 ### Algorithm/Logic Flow
 ```
-Step 1: [Description]
-   ↓
-Step 2: [Description]
-   ↓
-Step 3: [Description]
-   ↓
-Result: [Final output/outcome]
+Step 1: Initialize all sensors and LEDs
+↓
+Step 2: Continuously read data from pressure and flex sensors
+↓
+Step 3: If flex is bent and pressure is high → Slap detected
+↓
+Step 4: If flex is bent and pressure is low → Touch detected
+↓
+Step 5: Output to respective LED
 ```
 
 ---
@@ -81,29 +73,29 @@ Result: [Final output/outcome]
 ## 🚀 Applications & Use Cases
 
 ### Primary Applications
-- **Application 1:** [Description of use case]
-- **Application 2:** [Description of use case]
-- **Application 3:** [Description of use case]
+- Enhancing **Human-Robot Interaction (HRI)**
+- Wearable **assistive technologies**
+- **Security bots** that respond to aggressive behavior
 
 ### Future Scope
-- [Potential enhancement 1]
-- [Potential enhancement 2]
-- [Scalability considerations]
+- Add vibration or haptic feedback
+- Wireless communication via WiFi/Bluetooth
+- Real-time data visualization
+- Gesture classification using ML
 
 ---
 
 ## 📱 Demo & Results
 
 ### Screenshots/Images
-[Add screenshots, demo images, or results visualizations here]
+> [To be updated upon circuit test and result documentation](https://github.com/Shreyas-k-p/Skynetic/blob/main/Screenshot%202025-06-28%20011825.png)
 
 ### Performance Metrics
 | Metric | Value |
 |--------|-------|
-| Accuracy/Efficiency | XX% |
-| Processing Time | XX ms/s |
-| Memory Usage | XX MB |
-| [Other relevant metrics] | XX |
+| Flex Detection Threshold | ~1800 |
+| Pressure Range | 300–1000+ mbar |
+| Reaction Time | ~200 ms |
 
 ---
 
@@ -111,46 +103,35 @@ Result: [Final output/outcome]
 
 ### Prerequisites
 ```bash
-# List required software, libraries, or hardware
-- Python 3.x
-- [Required libraries]
-- [Hardware requirements if applicable]
+- Arduino IDE
+- ESP32 Board installed
+- Required Libraries: Wire.h
 ```
 
 ### Installation Steps
 ```bash
-# Clone the repository
-git clone [your-repo-link]
-
-# Navigate to project directory
-cd [project-name]
-
-# Install dependencies
-pip install -r requirements.txt
-
-# [Additional setup steps]
+git clone https://github.com/Shreyas-k-p/Skynetic.git
+cd Skynetic
+Open .ino file in Arduino IDE
+Upload to ESP32-S2-WROVER
 ```
 
 ### Usage
 ```bash
-# How to run the project
-python main.py
-
-# Or other execution commands
+Connect sensors to ESP32
+Power the system
+Touch or slap to see LED response
 ```
 
 ---
 
 ## 📊 Project Structure
 ```
-project-name/
-├── src/                    # Source code
-├── data/                   # Dataset files
-├── models/                 # Trained models
-├── docs/                   # Documentation
-├── tests/                  # Test files
-├── requirements.txt        # Dependencies
-└── README.md              # This file
+Skynetic/
+├── code/                 # Arduino IDE code
+├── docs/                 # Block & Circuit Diagrams
+├── presentation/         # PPT
+├── README.md             # Overview and Summary
 ```
 
 ---
@@ -158,32 +139,31 @@ project-name/
 ## 🎓 Learning Outcomes
 
 ### Technical Skills Gained
-- [Skill 1 - e.g., Machine Learning model development]
-- [Skill 2 - e.g., Embedded programming]
-- [Skill 3 - e.g., Data analysis and visualization]
+- Embedded system design
+- Sensor interfacing
+- Real-time signal processing
 
 ### Tools & Technologies Mastered
-- [Tool 1]
-- [Tool 2]
-- [Tool 3]
+- ESP32-S2-WROVER
+- Arduino IDE
+- Git & GitHub
+- Sensor calibration & multiplexing
 
 ---
 
 ## 🤝 Acknowledgments
 
-Special thanks to the **Ecocee team** for providing guidance and support throughout this internship project.
+Thank you **Ecocee** for this internship opportunity and technical guidance throughout the embedded training.
 
-**Mentor:** [Mentor Name]  
-**Team Number:** [Team #XX]  
-**Team Size:** [Number of team members]
+**Mentor:** Team Ecocee  
+**Team Number:** 07  
+**Team Size:** 2 Members
 
 ### 👨‍💼 Team Contributions
 | Team Member | Primary Contributions |
-|-------------|----------------------|
-| [Member 1 Name] | [e.g., Project architecture, ML model development] |
-| [Member 2 Name] | [e.g., Data preprocessing, testing] |
-| [Member 3 Name] | [e.g., UI/UX design, documentation] |
-| [Member 4 Name] | [e.g., Hardware integration, debugging] |
+|-------------|------------------------|
+| Shreyas K P | Coding, Circuit Design, Documentation, Presentation|
+| Amrithraj M M | Component Wiring, Testing, Presentation, Documentation |
 
 ---
 
@@ -196,25 +176,23 @@ Special thanks to the **Ecocee team** for providing guidance and support through
 ### 👥 Team Contacts
 | Team Member | Email | LinkedIn | GitHub |
 |-------------|-------|----------|--------|
-| [Member 1 Name] | [email@example.com] | [LinkedIn] | [GitHub Profile] |
-| [Member 2 Name] | [email@example.com] | [LinkedIn] | [GitHub Profile] |
-| [Member 3 Name] | [email@example.com] | [LinkedIn] | [GitHub Profile] |
-| [Member 4 Name] | [email@example.com] | [LinkedIn] | [GitHub Profile] |
+| Shreyas K P | shreyas5710kp@gmail.com | [LinkedIn](https://www.linkedin.com/in/shreyas-k-p-5016a432b) | [GitHub](https://github.com/Shreyas-k-p) |
+| Amrithraj M M | amruthrajmurali1441@gmail.com | [LinkedIn](https://www.linkedin.com/in/amrithraj-m-m-512780338) | [GitHub](https://github.com/AMRITHRAJ2002) |
 
 ---
 
 <div align="center">
-  
-  **Made with ❤️ during internship at Ecocee**
-  
-  ⭐ **Star this repo if you found it helpful!** ⭐
-  
+
+**Made with ❤️ during internship at Ecocee**
+
+⭐ **Star this repo if you found it helpful!** ⭐
+
 </div>
 
 ---
 
 ## 📄 License
 
-This project is developed as part of an internship program at Ecocee. Please refer to the company's guidelines for usage and distribution.
+This project is developed as part of an internship program at Ecocee. Please contact the company for usage and distribution rights.
 
 [Optional: Add specific license if applicable]
