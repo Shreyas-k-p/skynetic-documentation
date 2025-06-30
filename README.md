@@ -195,4 +195,3 @@ Thank you **Ecocee** for this internship opportunity and technical guidance thro
 
 This project is developed as part of an internship program at Ecocee. Please contact the company for usage and distribution rights.
 
-[Optional: Add specific license if applicable]
